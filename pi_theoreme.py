@@ -44,7 +44,7 @@ def hypotenuse_pi():
         # h = (square_root(h_sqr)
         h = math.sqrt(float(h_sqr))
         
-        print('\nThe Hypotenuse of the triangle is ' + '√' + str(int(h_sqr)) + ' (=) ' + str(h))
+        print('\nThe Hypotenuse of the triangle is ' + '√' + str(float(h_sqr)) + ' (=) ' + str(h))
         
     except Exception:
         print('\nError while calculating the hypotenuse of triangle')
@@ -64,7 +64,7 @@ def cathet_pi():
         # c_c = (square_root(c_x))
         c_cathet = math.sqrt(float(c_x))
 
-        print('\nThe Cathet of the triangule is √' + str(int(c_x)) + ' (=) ' + str(c_cathet))
+        print('\nThe Cathet of the triangule is √' + str(float(c_x)) + ' (=) ' + str(c_cathet))
                         
     except Exception:
         print('\nError while calculating the cathet of triangle')
