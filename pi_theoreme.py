@@ -45,7 +45,7 @@ def hypotenuse_pi():
         h = math.sqrt(float(h_sqr))
         
         print('\nThe Hypotenuse of the triangle is ' + '√' + str(float(h_sqr)) + ' (=) ' + str(h))
-        
+        #
     except Exception:
         print('\nError while calculating the hypotenuse of triangle')
         sys.exit(1)
