@@ -70,7 +70,7 @@ def cathet_pi():
         print('\nError while calculating the cathet of triangle')
         sys.exit(1)
              
-def hipotenuse_cateto():
+def hypotenuse_cathet():
     if args[1] == 'h' or args[1] == 'hypotenuse':
         hypotenuse_pi()
     elif args[1] == 'c' or args[1] == 'cathet':
@@ -81,7 +81,7 @@ def hipotenuse_cateto():
         print('\nIts only possible to calculate the hypotenuse or the cathets of a triangule. Use -h or --help to learn how program works.')
         sys.exit()
 def main():
-    hipotenuse_cateto()
+    hypotenuse_cathet()
     
 if __name__ == '__main__':
     main()
