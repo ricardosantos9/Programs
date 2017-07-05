@@ -1,6 +1,7 @@
-#!usr/bin/python
+#!/usr/bin/python
 import hashlib
 import sys
+import os
 
 # Creating arguments
 args = sys.argv
@@ -15,7 +16,7 @@ def label_func():
     print('#\t\t\t\t\t\t\t\t\t       #')
     print('################################################################################')
 
-    print('\nUse "python hashcrypter.py [hash type] [string]" to hash a string.\nUse "python hashcrypter.py -h/--help" to learn how script works.\nUse "python hashcrypter.py --hash" to see hash algoritms that can be use.\n')
+    print('\nUse "./hashcrypter.py [hash type] [string]" to hash a string.\nUse "./hashcrypter.py -h/--help" to learn how script works.\nUse "./hashcrypter.py --hash/-ha" to see hash algoritms that can be use.\n')
 
 try:
     hash_type = args[1]
@@ -68,7 +69,7 @@ def sha384_hash():
     print('\n[+] Hash: ' + str(sha384_data + '\n'))
 
 def help():
-    print('\npython hashcrypter.py [hash type] [string to hash]\n')
+    print('\n./hashcrypter.py [hash type] [string to hash]\n')
 
 def hash_table():
     print('\nHash that can be used:')
@@ -96,7 +97,7 @@ try:
         sha384_hash()
     elif (hash_type == '-h' or hash_type == '--help'):
         help()
-    elif (hash_type == '--hash' or hash_type == '--HASH'):
+    elif (hash_type == '--hash' or hash_type == '--HASH' or hash_type == '-ha' or hash_type == '-HA'):
         hash_table()
     elif args[0]:
         label_func()
