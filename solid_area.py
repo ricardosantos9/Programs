@@ -80,39 +80,42 @@ except Exception:
     label()
     sys.exit(1)
 
-#Reading User Arguments
-if solid == 'sqr' or solid == 'square':
-    try:
-        area_sqr(args[2], args[3])
-    except Exception:
-	label()
-	sys.exit(1)
-elif solid == 'trg' or solid == 'triangle':
-    try:
-    	area_trg(args[2], args[3])
-    except Exception:
-	label()
-	sys.exit(1)
-elif solid == 'crc' or solid == 'circle':
-    try:
-	area_crc(args[2])
-    except Exception:
-	label()
-	sys.exit(1)
-elif solid == 'trp' or solid == 'trapezoid':
-    try:
-   	 area_trp(args[2], args[3], args[4])
-    except Exception:
-	label()
-	sys.exit(1)
-elif solid == '-h' or solid == '--help' or solid == 'help':
-    try:
-    	help()
-    except Exception:
-	label()
-	sys.exit(1)
-else:
-    label()
-    sys.exit(1)
-#End
+def main():
+    #Reading User Arguments
+    if solid == 'sqr' or solid == 'square':
+        try:
+            area_sqr(args[2], args[3])
+        except Exception:
+            label()
+        sys.exit(1)
+    elif solid == 'trg' or solid == 'triangle':
+        try:
+            area_trg(args[2], args[3])
+        except Exception:
+            label()
+        sys.exit(1)
+    elif solid == 'crc' or solid == 'circle':
+        try:
+            area_crc(args[2])
+        except Exception:
+            label()
+        sys.exit(1)
+    elif solid == 'trp' or solid == 'trapezoid':
+        try:
+            area_trp(args[2], args[3], args[4])
+        except Exception:
+            label()
+        sys.exit(1)
+    elif solid == '-h' or solid == '--help' or solid == 'help':
+        try:
+            help()
+        except Exception:
+            label()
+        sys.exit(1)
+    else:
+        label()
+        sys.exit(1)
 
+if __name__ == '__main__':
+    main()
+#End
