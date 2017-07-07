@@ -15,8 +15,8 @@ def label():
     print('#\t\t\t\t\t\t\t\t\t       #')
     print('################################################################################')
 
-    print('\nUse "python pi_theoreme.py [h or hypotenuse][cathet] [cathet]" to calculate the hypotenuse value of a triangle(Only retangle).')
-    print('Use "python pi_theoreme.py [c or cathet][hypotenuse] [cathet]" to calculate the cathet value of a triangle(Only retangle).')
+    print('\nUse "./pi_theoreme.py [h or hypotenuse][cathet] [cathet]" to calculate the hypotenuse value of a triangle(Only retangle).')
+    print('Use "./pi_theoreme.py [c or cathet][hypotenuse] [cathet]" to calculate the cathet value of a triangle(Only retangle).')
 
 try:
     h_c = args[1]
@@ -26,8 +26,8 @@ except Exception:
 
 def help_pi():
     print('\nUsage:\n')
-    print('Use "python pi_theoreme.py [h or hypotenuse][cathet] [cathet]" to calculate the hypotenuse value of a triangle(Only retangle).')
-    print('Use "python pi_theoreme.py [c or cathet][hypotenuse] [cathet]" to calculate the cathet value of a triangle(Only retangle).')
+    print('Use "./pi_theoreme.py [h or hypotenuse][cathet] [cathet]" to calculate the hypotenuse value of a triangle(Only retangle).')
+    print('Use "./pi_theoreme.py [c or cathet][hypotenuse] [cathet]" to calculate the cathet value of a triangle(Only retangle).')
     
 def hypotenuse_pi():
     try:
