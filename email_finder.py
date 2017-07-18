@@ -1,3 +1,6 @@
+#/usr/bin/python
+#-*- coding: utf-8 -*-
+
 import requests
 import re
 import sys
@@ -5,8 +8,8 @@ import random
 
 class colors:
     yellow = '\033[93m'
-    red = '\033[91m'
     green = '\033[91m'
+    red = '\033[91m'
     cyan = '\033[96m'
     normal = '\033[0m'
 
@@ -34,10 +37,10 @@ def email_find(url):
                 pass
 
     for email_found in emails_found:
-        print(colors.green + '\n[+]' + colors.normal + colors.yellow + 'Email Founded:' + str(email_found) + colors.normal)
+        print(colors.red + '\n[+]' + colors.normal + colors.green + 'Email Founded:' + colors.normal + colors.yellow + str(email_found) + colors.normal + '\n')
 
 def main():
-    if url_args == '-h' or url_args == '--url':
+    if url_args == '-u' or url_args == '--url':
         email_find(args[2])
     else:
         print('Url needed to email crawl. -u/--url')
