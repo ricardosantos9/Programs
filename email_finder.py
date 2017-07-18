@@ -9,6 +9,7 @@ import random
 class colors:
     red = '\033[91m'
     green = '\033[92m'
+    yellow = '\033[93m'
     normal = '\033[0m'
 
 args = sys.argv
