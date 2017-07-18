@@ -8,7 +8,7 @@ import random
 
 class colors:
     yellow = '\033[93m'
-    green = '\033[91m'
+    green = '\e[32mGreen'
     red = '\033[91m'
     cyan = '\033[96m'
     normal = '\033[0m'
