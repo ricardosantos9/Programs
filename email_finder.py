@@ -1,4 +1,4 @@
-#/usr/bin/python
+#!/usr/bin/python
 #-*- coding: utf-8 -*-
 
 import requests
@@ -7,11 +7,11 @@ import sys
 import random
 
 class colors:
-    yellow = '\033[93m'
-    green = '\e[32mGreen'
-    red = '\033[91m'
-    cyan = '\033[96m'
-    normal = '\033[0m'
+    yellow = "Default \e[93mLight yellow"
+    green = "Default \e[93mLight yellow"
+    red = "Default \e[91mLight red"
+    cyan = "Default \e[96mLight cyan"
+    normal = "Default \e[97mWhite"
 
 args = sys.argv
 
