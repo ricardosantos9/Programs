@@ -34,10 +34,11 @@ def email_find(url):
                 emails_found.add(email)
             else:
                 pass
-
+    print('')
     for email_found in emails_found:
-        print(colors.red + '\n[+] ' + colors.normal + colors.green + 'Email Founded: ' + colors.normal + colors.yellow + str(email_found) + colors.normal + '\n')
-
+        print(colors.red + '[+] ' + colors.normal + colors.green + 'Email Founded: ' + colors.normal + colors.yellow + str(email_found) + colors.normal)
+    print('')
+    
 def main():
     if url_args == '-u' or url_args == '--url':
         email_find(args[2])
