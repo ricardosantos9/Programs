@@ -7,11 +7,9 @@ import sys
 import random
 
 class colors:
-    yellow = "Default \e[93mLight yellow"
-    green = "Default \e[93mLight yellow"
-    red = "Default \e[91mLight red"
-    cyan = "Default \e[96mLight cyan"
-    normal = "Default \e[97mWhite"
+    red = '\033[91m'
+    green = '\033[92m'
+    normal = '\033[0m'
 
 args = sys.argv
 
