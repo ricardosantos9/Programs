@@ -48,9 +48,6 @@ except:
     label()
     exit()
 
-def links_header(url, header):
-    print('Ola')
-
 def email_find(url):
     for i in range(1):
         emails_found = set()
