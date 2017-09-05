@@ -52,7 +52,7 @@ def create_stub():
 
     try:
         stub = "import pyaes\n"
-        stub += "crypt_data_hex = \"" + crypto_data_hex + "\"\n"
+        stub += "crypt_data_hex = \"" + crypt_data_hex + "\"\n"
         stub += "key = \"" + aes_key + "\"\n"
         stub += "new_file_name = \"" + new_file_name + "\"\n"
         stub += """
